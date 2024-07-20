@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="*"
+license="All rights reserved"
+issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Piglin%20Names"
+logoFile="icon.png"
+
+[[mods]]
+modId="piglinnames"
+version="1.0"
+displayName="Piglin Names"
+displayURL="https://curseforge.com/minecraft/mc-mods/piglin-names"
+authors="Rick South"
+description='''Gives all piglins a default or custom name to liven up the world.
+'''
+credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
+
+Alister, Andrean Olgo, aternosorg, BirdieMiner, Cherriesaurus, Michael W. S., Shana Gitnick, Sukhmai, Tyler Behl   
+
+If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
+'''
+
+[[dependencies.piglinnames]]
+    modId="collective"
+    type="required"
+    versionRange="[7.71,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.piglinnames]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.6]"
+    ordering="NONE"
+    side="BOTH"
+
+[[mixins]]
+    config = "piglinnames.mixins.json"
