@@ -1,6 +1,7 @@
 package com.natamus.piglinnames;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.piglinnames.cmds.CommandPiglinnames;
 import com.natamus.piglinnames.events.PiglinEvents;
 import com.natamus.piglinnames.util.Reference;
@@ -14,6 +15,10 @@ public class ModFabric implements ModInitializer {
 	
 	@Override
 	public void onInitialize() {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		setGlobalConstants();
 		ModCommon.init();
 

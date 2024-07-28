@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "piglinnames",
-  "version": "1.0",
+  "version": "1.1",
 
   "name": "Piglin Names",
   "description": "Gives all piglins a default or custom name to liven up the world.",
@@ -18,7 +18,7 @@
   "environment": "*",
   "entrypoints": { "main": [ "com.natamus.piglinnames.ModFabric" ], "modmenu": [ "com.natamus.piglinnames.fabric.config.IntegrateModMenu" ] },
   "mixins": [
-	"piglinnames_fabric.mixins.json"
+	"piglinnames.mixins.json"
   ],
   "mixins": [
     "piglinnames.mixins.json"
@@ -29,7 +29,7 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=21",
-    "collective": ">=7.71"
+    "collective": ">=7.78"
   },
 
   "custom": {
@@ -50,11 +50,10 @@
 	  " Alister",
 	  " Andrean Olgo",
 	  " aternosorg",
-	  " BirdieMiner",
 	  " Cherriesaurus",
 	  " Michael W. S.",
+	  " Nahuel Fernandez",
 	  " Shana Gitnick",
-	  " Sukhmai",
 	  " Tyler Behl"
   ]
 }
