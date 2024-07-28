@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "piglinnames",
-  "version": "1.0",
+  "version": "1.1",
 
   "name": "Piglin Names",
   "description": "Gives all piglins a default or custom name to liven up the world.",
@@ -26,7 +26,7 @@
     "fabric": "*",
     "minecraft": ">=1.21",
     "java": ">=21",
-    "collective": ">=7.71"
+    "collective": ">=7.78"
   },
 
   "custom": {
@@ -47,11 +47,10 @@
 	  " Alister",
 	  " Andrean Olgo",
 	  " aternosorg",
-	  " BirdieMiner",
 	  " Cherriesaurus",
 	  " Michael W. S.",
+	  " Nahuel Fernandez",
 	  " Shana Gitnick",
-	  " Sukhmai",
 	  " Tyler Behl"
   ]
 }
