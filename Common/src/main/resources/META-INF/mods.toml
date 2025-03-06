@@ -6,7 +6,7 @@ logoFile="icon.png"
 
 [[mods]]
 modId="piglinnames"
-version="1.2"
+version="1.3"
 displayName="Piglin Names"
 displayURL="https://serilum.com/mod/piglin-names"
 authors="Rick South"
@@ -22,7 +22,7 @@ If you would like to contribute too, check out https://serilum.com/donate. Appre
 [[dependencies.piglinnames]]
     modId="collective"
     mandatory=true
-    versionRange="[7.91,)"
+    versionRange="[7.93,)"
     ordering="NONE"
     side="BOTH"
 
