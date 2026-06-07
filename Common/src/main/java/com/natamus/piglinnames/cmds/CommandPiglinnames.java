@@ -1,4 +1,5 @@
 package com.natamus.piglinnames.cmds;
+import com.natamus.piglinnames.util.Reference;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.natamus.collective.functions.MessageFunctions;
@@ -21,7 +22,7 @@ public class CommandPiglinnames {
 
 				int count = Util.unnameLoadedPiglins(source.getLevel());
 
-				MessageFunctions.sendMessage(source, "The names of " + count + " loaded piglins have been removed.", ChatFormatting.DARK_GREEN);
+				MessageFunctions.sendTranslatableMessage(source, "collective.piglinnames.message.namesloadedpiglins", ChatFormatting.DARK_GREEN, count);
 				return 1;
 			}))
 			.then(Commands.literal("name")
@@ -30,7 +31,7 @@ public class CommandPiglinnames {
 
 				int count = Util.nameLoadedPiglins(source.getLevel());
 
-				MessageFunctions.sendMessage(source, count + " loaded piglins without a name have been named.", ChatFormatting.DARK_GREEN);
+				MessageFunctions.sendTranslatableMessage(source, "collective.piglinnames.message.loadedpiglinswithout", ChatFormatting.DARK_GREEN, count);
 				return 1;
 			}))
 			.then(Commands.literal("rename")
@@ -39,19 +40,19 @@ public class CommandPiglinnames {
 
 				int count = Util.renameLoadedPiglins(source.getLevel());
 
-				MessageFunctions.sendMessage(source, count + " loaded piglins have been renamed.", ChatFormatting.DARK_GREEN);
+				MessageFunctions.sendTranslatableMessage(source, "collective.piglinnames.message.loadedpiglinsrenamed", ChatFormatting.DARK_GREEN, count);
 				return 1;
 			}))
 		);
 	}
 
 	public static void sendUsage(CommandSourceStack source) {
-		MessageFunctions.sendMessage(source, "--- Piglin Names Commands Usage ---", ChatFormatting.DARK_GREEN, true);
+		MessageFunctions.sendTranslatableMessage(source, "collective.shared.message.commandsusage", true, ChatFormatting.DARK_GREEN, Reference.NAME);
 		MessageFunctions.sendMessage(source, " /piglinnames unname", ChatFormatting.DARK_GREEN);
-		MessageFunctions.sendMessage(source, "  Removes the names of all loaded piglins.", ChatFormatting.DARK_GRAY);
+		MessageFunctions.sendTranslatableMessage(source, "  ", "collective.piglinnames.message.removesnamesloaded", ChatFormatting.DARK_GRAY);
 		MessageFunctions.sendMessage(source, " /piglinnames name", ChatFormatting.DARK_GREEN);
-		MessageFunctions.sendMessage(source, "  Gives all unnamed loaded piglins a name.", ChatFormatting.DARK_GRAY);
+		MessageFunctions.sendTranslatableMessage(source, "  ", "collective.piglinnames.message.givesunnamedloaded", ChatFormatting.DARK_GRAY);
 		MessageFunctions.sendMessage(source, " /piglinnames rename", ChatFormatting.DARK_GREEN);
-		MessageFunctions.sendMessage(source, "  Gives all loaded piglins a new random name.", ChatFormatting.DARK_GRAY);
+		MessageFunctions.sendTranslatableMessage(source, "  ", "collective.piglinnames.message.givesloadedpiglins", ChatFormatting.DARK_GRAY);
 	}
 }
