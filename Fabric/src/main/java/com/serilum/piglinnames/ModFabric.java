@@ -1,10 +1,10 @@
-package com.natamus.piglinnames;
+package com.serilum.piglinnames;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.piglinnames.cmds.CommandPiglinnames;
-import com.natamus.piglinnames.events.PiglinEvents;
-import com.natamus.piglinnames.util.Reference;
+import com.serilum.piglinnames.cmds.CommandPiglinnames;
+import com.serilum.piglinnames.events.PiglinEvents;
+import com.serilum.piglinnames.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;

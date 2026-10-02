@@ -1,10 +1,10 @@
-package com.natamus.piglinnames;
+package com.serilum.piglinnames;
 
 import com.natamus.collective.config.GenerateJSONFiles;
-import com.natamus.piglinnames.config.ConfigHandler;
-import com.natamus.piglinnames.data.Variables;
-import com.natamus.piglinnames.util.Names;
-import com.natamus.piglinnames.util.Reference;
+import com.serilum.piglinnames.config.ConfigHandler;
+import com.serilum.piglinnames.data.Variables;
+import com.serilum.piglinnames.util.Names;
+import com.serilum.piglinnames.util.Reference;
 
 import java.io.IOException;
 

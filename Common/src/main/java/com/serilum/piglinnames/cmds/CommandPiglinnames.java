@@ -1,9 +1,9 @@
-package com.natamus.piglinnames.cmds;
-import com.natamus.piglinnames.util.Reference;
+package com.serilum.piglinnames.cmds;
+import com.serilum.piglinnames.util.Reference;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.natamus.collective.functions.MessageFunctions;
-import com.natamus.piglinnames.util.Util;
+import com.serilum.piglinnames.util.Util;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

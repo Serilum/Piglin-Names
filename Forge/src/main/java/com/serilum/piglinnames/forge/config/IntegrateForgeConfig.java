@@ -1,7 +1,7 @@
-package com.natamus.piglinnames.forge.config;
+package com.serilum.piglinnames.forge.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.piglinnames.util.Reference;
+import com.serilum.piglinnames.util.Reference;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 

@@ -1,4 +1,4 @@
-package com.natamus.piglinnames.data;
+package com.serilum.piglinnames.data;
 
 import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;

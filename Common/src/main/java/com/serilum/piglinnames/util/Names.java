@@ -1,9 +1,9 @@
-package com.natamus.piglinnames.util;
+package com.serilum.piglinnames.util;
 
 import com.natamus.collective.data.GlobalVariables;
 import com.natamus.collective.functions.DataFunctions;
 import com.natamus.collective.functions.StringFunctions;
-import com.natamus.piglinnames.config.ConfigHandler;
+import com.serilum.piglinnames.config.ConfigHandler;
 
 import java.io.File;
 import java.io.IOException;

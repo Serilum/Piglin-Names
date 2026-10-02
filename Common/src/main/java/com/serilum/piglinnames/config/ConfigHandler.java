@@ -1,7 +1,7 @@
-package com.natamus.piglinnames.config;
+package com.serilum.piglinnames.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.piglinnames.util.Reference;
+import com.serilum.piglinnames.util.Reference;
 
 import java.util.Arrays;
 import java.util.HashMap;

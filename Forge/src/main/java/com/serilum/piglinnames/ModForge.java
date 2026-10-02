@@ -1,10 +1,10 @@
-package com.natamus.piglinnames;
+package com.serilum.piglinnames;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.piglinnames.forge.config.IntegrateForgeConfig;
-import com.natamus.piglinnames.forge.events.ForgePiglinEvents;
-import com.natamus.piglinnames.util.Reference;
+import com.serilum.piglinnames.forge.config.IntegrateForgeConfig;
+import com.serilum.piglinnames.forge.events.ForgePiglinEvents;
+import com.serilum.piglinnames.util.Reference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;

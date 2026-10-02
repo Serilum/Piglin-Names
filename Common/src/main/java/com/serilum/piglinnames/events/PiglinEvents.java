@@ -1,8 +1,8 @@
-package com.natamus.piglinnames.events;
+package com.serilum.piglinnames.events;
 
 import com.natamus.collective.functions.EntityFunctions;
-import com.natamus.piglinnames.util.Names;
-import com.natamus.piglinnames.util.Reference;
+import com.serilum.piglinnames.util.Names;
+import com.serilum.piglinnames.util.Reference;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.monster.piglin.AbstractPiglin;
 import net.minecraft.world.level.Level;

@@ -1,4 +1,4 @@
-package com.natamus.piglinnames.util;
+package com.serilum.piglinnames.util;
 
 import com.natamus.collective.functions.EntityFunctions;
 import net.minecraft.server.level.ServerLevel;
