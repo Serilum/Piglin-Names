@@ -1,0 +1,19 @@
+package com.serilum.piglinnames.neoforge.events;
+
+import com.serilum.piglinnames.cmds.CommandPiglinnames;
+import com.serilum.piglinnames.events.PiglinEvents;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.event.RegisterCommandsEvent;
+import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
+
+public class NeoForgePiglinEvents {
+	@SubscribeEvent
+	public static void onSpawn(EntityJoinLevelEvent e) {
+		PiglinEvents.onSpawn(e.getLevel(), e.getEntity());
+	}
+
+	@SubscribeEvent
+	public static void registerCommands(RegisterCommandsEvent e) {
+		CommandPiglinnames.register(e.getDispatcher());
+	}
+}
