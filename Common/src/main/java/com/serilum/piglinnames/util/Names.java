@@ -19,6 +19,8 @@ public class Names {
 	public static List<String> customPiglinNames = new ArrayList<String>();
 	
 	public static void setCustomNames() throws IOException {
+		customPiglinNames = new ArrayList<>();
+
 		String dirpath = DataFunctions.getConfigDirectory() + File.separator + "piglinnames";
 		File dir = new File(dirpath);
 		File file = new File(dirpath + File.separator + "customnames.txt");
@@ -46,6 +48,46 @@ public class Names {
 		}
 	}
 	
+	public static String getCustomNamesText() {
+		String customNamesText;
+		try {
+			customNamesText = Files.readString(getCustomNamesPath()).replace("\n", "").replace("\r", "").strip();
+		}
+		catch (IOException ignored) {
+			return "";
+		}
+
+		List<String> names = new ArrayList<>();
+		for (String name : customNamesText.split(",")) {
+			if (!name.isBlank()) {
+				names.add(name.strip());
+			}
+		}
+		return String.join("\n", names);
+	}
+
+	public static void setCustomNamesText(String customNamesText) {
+		List<String> names = new ArrayList<>();
+		for (String name : customNamesText.split("\\R")) {
+			if (!name.isBlank()) {
+				names.add(name.strip());
+			}
+		}
+
+		try {
+			PrintWriter writer = new PrintWriter(getCustomNamesPath().toFile(), StandardCharsets.UTF_8);
+			writer.println(String.join(",", names));
+			writer.close();
+
+			setCustomNames();
+		}
+		catch (IOException ignored) { }
+	}
+
+	private static Path getCustomNamesPath() {
+		return Paths.get(DataFunctions.getConfigDirectory() + File.separator + "piglinnames" + File.separator + "customnames.txt");
+	}
+
 	public static String getRandomName() {
 		List<String> piglinNameList = new ArrayList<String>();
 

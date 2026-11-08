@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "piglinnames",
-  "version": "1.5",
+  "version": "1.6",
 
   "name": "Piglin Names",
   "description": "Gives all piglins a default or custom name to liven up the world.",
@@ -26,13 +26,13 @@
     "fabric-api": "*",
     "minecraft": ">=26.3",
     "java": ">=25",
-    "collective": ">=8.40"
+    "collective": ">=8.84"
   },
 
   "custom": {
     "modmenu": {
       "links": {
-        "Donate <3" : "https://serilum.com/donate"
+        "❤ Patreon" : "https://link.serilum.com/patreon"
       }
     }
   },
@@ -44,8 +44,6 @@
 	  "If you would like to contribute too, check out https://serilum.com/donate",
 	  " ",
 	  "Membership sponsors:",
-	  " Andrean Olgo",
-	  " AnyankaT",
 	  " aternosorg",
 	  " Cherriesaurus",
 	  " Linda Jansen",
